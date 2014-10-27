@@ -1,0 +1,20 @@
+{
+  "name": "Team project, final year, term 1.",
+  "version": "0.0.1",
+  "description": "Final year team project, term 1.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ritchie Vincent",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-jshint": "latest",
+    "jshint-stylish": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

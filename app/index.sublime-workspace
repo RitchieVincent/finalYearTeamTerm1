@@ -1,0 +1,274 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max",
+				"max-width: "
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"mainP",
+				"main-panel"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"bounce",
+				"bounceOut"
+			],
+			[
+				"vi",
+				"visible"
+			],
+			[
+				"visi",
+				"visibility"
+			],
+			[
+				"transit",
+				"transitionEase"
+			],
+			[
+				"pad",
+				"padding-left: "
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding-top: "
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Didds/Documents/websites/team/Gruntfile.js",
+		"/C/Users/Didds/Documents/websites/team/app/assets/sass/style.scss",
+		"/C/Users/Didds/Documents/websites/team/app/assets/js/script.js",
+		"/C/Users/Didds/Documents/websites/team/app/assets/css/style.css",
+		"/C/Users/Didds/Documents/websites/team/app/assets/css/style.min.css",
+		"/C/Users/Didds/Documents/websites/team/app/assets/js/script.min.js",
+		"/C/Users/Didds/Documents/websites/team/package.json",
+		"/C/Users/Didds/Documents/websites/team/app/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap-sprockets.js",
+		"/C/Users/Didds/Documents/websites/team/app/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js",
+		"/C/Users/Didds/Documents/websites/team/app/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js",
+		"/C/Users/Didds/Documents/websites/team/bower.json",
+		"/C/Users/Didds/Documents/websites/team/.bowerrc",
+		"/C/Users/Didds/Documents/websites/team/sticky-footer-navbar.css",
+		"/C/Users/Didds/Documents/websites/team/index.html",
+		"/C/Users/Didds/Documents/websites/team/css/style.css",
+		"/C/Users/Didds/Documents/websites/team/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js",
+		"/C/Users/Didds/Documents/websites/team/bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss",
+		"/C/Users/Didds/Documents/websites/team/assets/css/style.css",
+		"/C/Users/Didds/Documents/websites/team/assets/sass/style.scss",
+		"/C/Users/Didds/Documents/websites/team/bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap-compass.scss",
+		"/C/Users/Didds/Documents/websites/team/bower_components/bootstrap-sass-official/package.json",
+		"/C/xampp/htdocs/website/js/app.js",
+		"/C/xampp/htdocs/website/scss/_settings.scss",
+		"/C/xampp/htdocs/website/scss/app.scss",
+		"/C/xampp/htdocs/website/index.php",
+		"/C/xampp/htdocs/website/stylesheets/app.css",
+		"/C/Users/Didds/Desktop/index.php",
+		"/C/xampp/htdocs/website/index2.php",
+		"/C/xampp/htdocs/website/bower_components/foundation/js/foundation/foundation.topbar.js",
+		"/C/Users/Didds/Downloads/animate.css",
+		"/C/Program Files/Sublime Text 3/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/website/fonts/stylesheet.css",
+		"/C/xampp/htdocs/website/bower_components/foundation/scss/foundation.scss",
+		"/C/xampp/htdocs/test/index.html",
+		"/C/Ruby200-x64/lib/ruby/site_ruby/2.0.0/rbreadline.rb",
+		"/C/Users/Didds/Documents/test.html"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"primary-color",
+			"30",
+			"subNavActiveBg",
+			"subnavactivebg",
+			"sub-nav",
+			"magellan",
+			"body",
+			"addc",
+			"top-bar-sticky",
+			"bounceindown",
+			"top-bar",
+			"section",
+			"primary-color",
+			"top-bar",
+			".main-panel",
+			"panel",
+			"button",
+			"dl"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
