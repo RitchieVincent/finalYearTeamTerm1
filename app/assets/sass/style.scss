@@ -1,14 +1,118 @@
+@import 'app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
+
+//Fonts
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+
+//-----------------------------------------------
+//Sass Variables
+
+$main-font: 'Oswald', sans-serif;
+$content-card-colour: #eee;
+$content-colour: #646464;
+$labourColour: #d50000;
+$conservativeColour: #0087dc;
+$libdemColour: #FDBB30;
+$ukipColour: #B3009D;
+
+//------------------------------------------------
+//Sass Mixins
+
+@mixin marginSection($margin) {
+	margin-bottom: $margin;
+}
+
+
+//------------------------------------------------
+
+
 body{
 	padding-top: 60px;
 	background: url(../img/surface-wood-chipboard.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.contentCard{
+	h1{
+		font-family: $main-font;
+		text-align: center;
+		font-size: 4em;
+	}
+	p{
+		margin: 0 20px 5px;
+	}
+	img{
+		width: 70%;
+	}
+	color: $content-colour;
+	background-color: $content-card-colour;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: -30px;
+	padding: 10px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+hr{
+	border-top: 5px solid darken($content-card-colour, 5);
 }
 
-html { 
-  
+
+
+
+
+
+
+div.options > .row > .partyName > label > input {
+    visibility: hidden;
 }
 
-@import 'app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
+div.options > .row > .partyName > label {
+    display: block;
+    margin: 0 0 0 -10px;
+    padding: 0 0 20px 0;  
+    height: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 20px 0px 10px;
+    font-size: 1.5em;
+    color: $content-card-colour;
+    font-family: $main-font;
+}
+
+.partySelection{
+	float: right;
+}
+
+div.options > .row > .partyName > label > img {
+    display: inline-block;
+    padding: 0px;
+    height:30px;
+    width:30px;
+    background: none;
+    background-color: #fff;
+}
+
+div.options > .row > .partyName > label > input:checked +img {  
+    background: url(../img/cross.png);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size:30px 30px;
+    background-color: #fff;
+}
+.labourSection, .conservativeSection, .libdemSection, .ukipSection{
+	@include marginSection(10px);
+}
+.labourSection{
+	background-color: $labourColour;
+}
+.conservativeSection{
+	background-color: $conservativeColour;
+}
+.libdemSection{
+	background-color: $libdemColour;
+}
+.ukipSection{
+	background-color: $ukipColour;
+}

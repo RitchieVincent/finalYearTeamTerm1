@@ -1,14 +1,6 @@
 @charset "UTF-8";
-body {
-  padding-top: 60px;
-  background: url(../img/surface-wood-chipboard.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6699,6 +6691,97 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+body {
+  padding-top: 60px;
+  background: url(../img/surface-wood-chipboard.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contentCard {
+  color: #646464;
+  background-color: #eee;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -30px;
+  padding: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+.contentCard h1 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 4em;
+}
+.contentCard p {
+  margin: 0 20px 5px;
+}
+.contentCard img {
+  width: 70%;
+}
+
+hr {
+  border-top: 5px solid #e1e1e1;
+}
+
+div.options > .row > .partyName > label > input {
+  visibility: hidden;
+}
+
+div.options > .row > .partyName > label {
+  display: block;
+  margin: 0 0 0 -10px;
+  padding: 0 0 20px 0;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 20px 0px 10px;
+  font-size: 1.5em;
+  color: #eee;
+  font-family: "Oswald", sans-serif;
+}
+
+.partySelection {
+  float: right;
+}
+
+div.options > .row > .partyName > label > img {
+  display: inline-block;
+  padding: 0px;
+  height: 30px;
+  width: 30px;
+  background: none;
+  background-color: #fff;
+}
+
+div.options > .row > .partyName > label > input:checked + img {
+  background: url(../img/cross.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30px 30px;
+  background-color: #fff;
+}
+
+.labourSection, .conservativeSection, .libdemSection, .ukipSection {
+  margin-bottom: 10px;
+}
+
+.labourSection {
+  background-color: #d50000;
+}
+
+.conservativeSection {
+  background-color: #0087dc;
+}
+
+.libdemSection {
+  background-color: #FDBB30;
+}
+
+.ukipSection {
+  background-color: #B3009D;
 }
 
 /*# sourceMappingURL=style.css.map */
