@@ -43,7 +43,7 @@
             <p>Please select your preferred political party</p>
           </div>
           <div class="col-md-3">
-            <img src="assets/img/ballotBox.png">
+            <img src="assets/img/ballotBox.png" class="img-responsive">
           </div>
         </div>
         <div class="row">
@@ -52,45 +52,59 @@
           </div>
         </div>
 
-<div class="options">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1 partyName labourSection">
-      <label title="item1">
-          <input type="radio" name="foo" value="0" /> 
-        The Labour Party
-          <img class="partySelection" />     
-     </label>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1 partyName conservativeSection">
-      <label title="item2">
-          <input type="radio" name="foo" value="1" />
-          The Conservative Party
-          <img class="partySelection" />
-      </label>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1 partyName libdemSection">  
-      <label title="item3">
-          <input type="radio" name="foo" value="2" />
-          The Liberal Democrats
-          <img class="partySelection" />
-      </label>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1 partyName ukipSection">
-      <label title="item4">
-          <input type="radio" name="foo" value="3" />
-          The United Kingdom Independence Party
-          <img class="partySelection" />
-      </label>
-    </div>
-  </div>
-</div> <!-- options -->
-
+      <form role="form">
+        <div class="options">
+          <div class="row">
+            <div class="col-md-1 col-md-offset-1">
+              <img src="assets/img/labourImage.png" class="partyImage pull-left" /> 
+            </div>
+            <div class="col-md-9 col-md-offset-1 partyName labourSection">
+              <label title="item1">
+                  <input type="radio" name="foo" value="0" />                  
+                The Labour Party
+                  <img class="partySelection" />     
+             </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-1 col-md-offset-1">
+              <img src="assets/img/conservativeImage.png" class="partyImage pull-left" /> 
+            </div>
+            <div class="col-md-9 col-md-offset-1 partyName conservativeSection">
+              <label title="item2">
+                  <input type="radio" name="foo" value="1" /> 
+                  The Conservative Party
+                  <img class="partySelection" />
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-1 col-md-offset-1">
+              <img src="assets/img/libdemImage.png" class="partyImage pull-left" /> 
+            </div>
+            <div class="col-md-9 col-md-offset-1 partyName libdemSection"> 
+              <label title="item3">
+                  <input type="radio" name="foo" value="2" /> 
+                  The Liberal Democrats
+                  <img class="partySelection" />
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-1 col-md-offset-1">
+              <img src="assets/img/ukipImage.png" class="partyImage pull-left" /> 
+            </div>
+            <div class="col-md-9 col-md-offset-1 partyName ukipSection">
+              <label title="item4">
+                  <input type="radio" name="foo" value="3" /> 
+                  The United Kingdom Independence Party
+                  <img class="partySelection" />
+              </label>
+            </div>
+          </div>
+        </div> <!-- options -->
+        <button onclick="myFunction()" type="submit" class="btn btn-default">Submit</button>
+      </form>
       </div> <!-- contentCard -->
 
     </div><!-- /.container -->
