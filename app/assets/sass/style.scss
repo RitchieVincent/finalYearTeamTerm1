@@ -76,6 +76,18 @@ hr{
     float: none;
     display: table-cell;
 }
+.paperPartRightAnimation {
+  -webkit-animation: contentCard 2s both;
+  cursor: default;
+  -webkit-transform-origin: 0 100%;
+  z-index: 10;
+}
+
+@-webkit-keyframes contentCard {
+  30% { left: 0; }
+  31% { transform: rotate(5deg);}
+  100% { left: 200%; opacity: 0; }
+}
 
 
 
