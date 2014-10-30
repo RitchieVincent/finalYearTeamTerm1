@@ -6695,19 +6695,16 @@ button.close {
 }
 body {
   padding-top: 60px;
-  background: url(../img/surface-wood-chipboard.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-image: url(../img/purty_wood.png);
+  background-repeat: repeat;
+  overflow-x: hidden;
 }
 
 .contentCard {
   color: #646464;
+  background-image: url(../img/linedpaper.png);
+  background-repeat: repeat;
   background-color: #eee;
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 60px;
   padding: 10px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
@@ -6723,8 +6720,33 @@ body {
   width: 70%;
 }
 
+.underRow {
+  margin-top: 60px;
+}
+
+.paperPartLeft {
+  background-image: url(../img/linedpaper.png);
+  background-repeat: repeat;
+  z-index: 1;
+  border-right: dashed 1px #ff0000;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.3);
+}
+
+.paperPartRight {
+  padding-left: 0;
+}
+
 hr {
   border-top: 5px solid #e1e1e1;
+}
+
+.paper {
+  display: table-row;
+}
+
+[class*="paperPart"] {
+  float: none;
+  display: table-cell;
 }
 
 div.options > .row > .partyName > label > input {
