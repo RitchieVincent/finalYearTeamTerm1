@@ -9,12 +9,13 @@
 //Sass Variables
 
 $main-font: 'Oswald', sans-serif;
+$primary-colour: #FF0066;
 $content-card-colour: #eee;
 $content-colour: #646464;
-$labourColour: #d50000;
-$conservativeColour: #0087dc;
-$libdemColour: #FDBB30;
-$ukipColour: #B3009D;
+$labourColour: #e74c3c;
+$conservativeColour: #3498db;
+$libdemColour: #f1c40f;
+$ukipColour: #9b59b6;
 
 //------------------------------------------------
 //Sass Mixins
@@ -26,7 +27,6 @@ $ukipColour: #B3009D;
 
 //------------------------------------------------
 
-
 body{
 	padding-top: 60px;
 	background-image: url(../img/purty_wood.png); //Thanks to Subtle Patterns!
@@ -36,14 +36,12 @@ body{
 .contentCard{
 	h1{
 		font-family: $main-font;
+		color: $primary-colour;
 		text-align: center;
 		font-size: 4em;
 	}
 	p{
 		margin: 0 20px 5px;
-	}
-	img{
-		width: 70%;
 	}
 	color: $content-colour;
 	background-image: url(../img/linedpaper.png); //Thanks to Subtle Patterns!
@@ -51,6 +49,9 @@ body{
 	background-color: $content-card-colour;
 	padding: 10px;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+.mainPageVoteCard{
+	width: 20%;
 }
 .underRow{ //This is so there is a gap at the bottom
 	margin-top: 60px;
@@ -61,16 +62,24 @@ body{
 	z-index: 1;
 	border-right: dashed 1px #ff0000;
 	box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.3);
+	width: 5%;
 }
 .paperPartRight{
 	padding-left: 0;
+	width: 55%;
 }
 hr{
-	border-top: 5px solid darken($content-card-colour, 5);
+	height: 5px;
+	background-color: $primary-colour;
+	color: $primary-colour;
+	border: 0 none;
+	margin: 20px auto;
 }
 
 .paper{
-	display: table-row;
+	display: block;
+	margin: 0 auto;
+	width: 85%;
 }
 [class*="paperPart"]{
     float: none;
@@ -107,6 +116,7 @@ div.options > .row > .partyName > label {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	margin-left: 60px;
+	text-align: center;
 }
 
 .partySelection{
@@ -172,5 +182,8 @@ div.options > .row > .partyName > label > input:checked +img {
 	}
 	.partyName{
 		margin-left: 50px;
+	}
+	div.options > .row > .partyName > label{
+		text-align: left;
 	}
 }

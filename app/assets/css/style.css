@@ -6710,14 +6710,16 @@ body {
 }
 .contentCard h1 {
   font-family: "Oswald", sans-serif;
+  color: #FF0066;
   text-align: center;
   font-size: 4em;
 }
 .contentCard p {
   margin: 0 20px 5px;
 }
-.contentCard img {
-  width: 70%;
+
+.mainPageVoteCard {
+  width: 20%;
 }
 
 .underRow {
@@ -6730,18 +6732,26 @@ body {
   z-index: 1;
   border-right: dashed 1px #ff0000;
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.3);
+  width: 5%;
 }
 
 .paperPartRight {
   padding-left: 0;
+  width: 55%;
 }
 
 hr {
-  border-top: 5px solid #e1e1e1;
+  height: 5px;
+  background-color: #FF0066;
+  color: #FF0066;
+  border: 0 none;
+  margin: 20px auto;
 }
 
 .paper {
-  display: table-row;
+  display: block;
+  margin: 0 auto;
+  width: 85%;
 }
 
 [class*="paperPart"] {
@@ -6783,6 +6793,7 @@ div.options > .row > .partyName > label {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin-left: 60px;
+  text-align: center;
 }
 
 .partySelection {
@@ -6821,19 +6832,19 @@ div.options > .row > .partyName > label > input:checked + img {
 }
 
 .labourSection {
-  background-color: #d50000;
+  background-color: #e74c3c;
 }
 
 .conservativeSection {
-  background-color: #0087dc;
+  background-color: #3498db;
 }
 
 .libdemSection {
-  background-color: #FDBB30;
+  background-color: #f1c40f;
 }
 
 .ukipSection {
-  background-color: #B3009D;
+  background-color: #9b59b6;
 }
 
 @media (max-width: 992px) {
@@ -6855,6 +6866,10 @@ div.options > .row > .partyName > label > input:checked + img {
 
   .partyName {
     margin-left: 50px;
+  }
+
+  div.options > .row > .partyName > label {
+    text-align: left;
   }
 }
 
