@@ -8,13 +8,14 @@
 //-----------------------------------------------
 //Sass Variables
 
-$main-font: 'Oswald', sans-serif;
-$primary-colour: #FF0066;
+$h1Font: 'Oswald', sans-serif;
+$mainFont: 'Roboto', sans-serif;
+$primary-colour: #ff2982;
 $content-card-colour: #eee;
 $content-colour: #646464;
 $labourColour: #e74c3c;
 $conservativeColour: #3498db;
-$libdemColour: #f1c40f;
+$libdemColour: #F7E041;
 $ukipColour: #9b59b6;
 
 //------------------------------------------------
@@ -22,6 +23,11 @@ $ukipColour: #9b59b6;
 
 @mixin marginSection($margin) {
 	margin-bottom: $margin;
+}
+@mixin mainFont($fontSize){
+	font-family: $mainFont;
+	font-weight: 300;
+	font-size: $fontSize;
 }
 
 
@@ -35,13 +41,14 @@ body{
 }
 .contentCard{
 	h1{
-		font-family: $main-font;
+		font-family: $h1Font;
 		color: $primary-colour;
 		text-align: center;
-		font-size: 4em;
+		font-size: 5em;
 	}
 	p{
 		margin: 0 20px 5px;
+		@include mainFont(1.2em);
 	}
 	color: $content-colour;
 	background-image: url(../img/linedpaper.png); //Thanks to Subtle Patterns!
@@ -52,6 +59,7 @@ body{
 }
 .mainPageVoteCard{
 	width: 20%;
+	border-bottom: solid 6px rgb(150, 150, 150);
 }
 .underRow{ //This is so there is a gap at the bottom
 	margin-top: 60px;
@@ -112,9 +120,8 @@ div.options > .row > .partyName > label {
 	width: 100%;
 	padding: 20px 60px 20px 0px;
 	font-size: 1.5em;
-	color: #eee;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	color: #000;
+	@include mainFont(1.5em);
 	margin-left: 60px;
 	text-align: center;
 }
@@ -128,7 +135,8 @@ img.partyImage{
 	height: 74px;
 	width: 74px;
 	position: relative;
-	z-index: 2;	
+	z-index: 2;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);	
 }
 
 div.options > .row > .partyName > label > img {
@@ -150,6 +158,7 @@ div.options > .row > .partyName > label > input:checked +img {
 .labourSection, .conservativeSection, .libdemSection, .ukipSection{
 	@include marginSection(10px);
 	margin-left: 12px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 .labourSection{
 	background-color: $labourColour;
@@ -162,6 +171,19 @@ div.options > .row > .partyName > label > input:checked +img {
 }
 .ukipSection{
 	background-color: $ukipColour;
+}
+
+.img-circular{
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/purty_wood.png);
+	background-size: cover;
+	display: block;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	position: relative;
+	left: 20px;
 }
 
 @media (max-width: 992px) {
@@ -186,4 +208,28 @@ div.options > .row > .partyName > label > input:checked +img {
 	div.options > .row > .partyName > label{
 		text-align: left;
 	}
+}
+
+
+
+
+.submitBtn {
+	display: inline-block;
+	position: relative;
+	width: 120px;
+	height: 40px;
+	color: #ffffff;
+	background-color: #27ae60;
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+    @include mainFont(1.2em);
+    margin: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+.submitBtn:hover{
+	background-color: #2ecc71;
+	color: #ffffff;
+}
+.submitBtn:active{
+	background-color: darken(#27ae60, 5);
 }

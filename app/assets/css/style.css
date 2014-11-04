@@ -6710,16 +6710,20 @@ body {
 }
 .contentCard h1 {
   font-family: "Oswald", sans-serif;
-  color: #FF0066;
+  color: #ff2982;
   text-align: center;
-  font-size: 4em;
+  font-size: 5em;
 }
 .contentCard p {
   margin: 0 20px 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
 }
 
 .mainPageVoteCard {
   width: 20%;
+  border-bottom: solid 6px #969696;
 }
 
 .underRow {
@@ -6742,8 +6746,8 @@ body {
 
 hr {
   height: 5px;
-  background-color: #FF0066;
-  color: #FF0066;
+  background-color: #ff2982;
+  color: #ff2982;
   border: 0 none;
   margin: 20px auto;
 }
@@ -6789,9 +6793,10 @@ div.options > .row > .partyName > label {
   width: 100%;
   padding: 20px 60px 20px 0px;
   font-size: 1.5em;
-  color: #eee;
-  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
+  font-size: 1.5em;
   margin-left: 60px;
   text-align: center;
 }
@@ -6807,6 +6812,7 @@ img.partyImage {
   width: 74px;
   position: relative;
   z-index: 2;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 div.options > .row > .partyName > label > img {
@@ -6829,6 +6835,7 @@ div.options > .row > .partyName > label > input:checked + img {
 .labourSection, .conservativeSection, .libdemSection, .ukipSection {
   margin-bottom: 10px;
   margin-left: 12px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .labourSection {
@@ -6840,11 +6847,24 @@ div.options > .row > .partyName > label > input:checked + img {
 }
 
 .libdemSection {
-  background-color: #f1c40f;
+  background-color: #F7E041;
 }
 
 .ukipSection {
   background-color: #9b59b6;
+}
+
+.img-circular {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/purty_wood.png);
+  background-size: cover;
+  display: block;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  position: relative;
+  left: 20px;
 }
 
 @media (max-width: 992px) {
@@ -6871,6 +6891,30 @@ div.options > .row > .partyName > label > input:checked + img {
   div.options > .row > .partyName > label {
     text-align: left;
   }
+}
+.submitBtn {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #27ae60;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  margin: 20px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.submitBtn:hover {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+
+.submitBtn:active {
+  background-color: #229955;
 }
 
 /*# sourceMappingURL=style.css.map */
